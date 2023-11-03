@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "ade9203d-aa0b-40c1-bc97-d6d1cc663c2e",
+		"name": "Creatingly",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "7342852"
+	},
+	"item": [
+		{
+			"name": "Get Rates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Watchlist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/watchlist"
+			},
+			"response": []
+		},
+		{
+			"name": "Set Watchlist",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"currencies\": [\"EUR\",\"GBP\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/watchlist"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Session",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/session"
+			},
+			"response": []
+		}
+	]
+}

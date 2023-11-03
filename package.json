@@ -1,0 +1,17 @@
+{
+  "name": "creatingly-backend-assessment",
+  "version": "1.0.0",
+  "description": "Back-End Assessment for Creatingly",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "Farshad Javan",
+  "license": "MIT",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1"
+  }
+}
