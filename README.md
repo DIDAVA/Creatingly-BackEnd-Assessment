@@ -1,5 +1,5 @@
 # Creatingly Back-End Assessment
-This repository represents a custom `session middleware` for `Express.JS` framework.
+This repository represents a `custom session middleware` for `Express.JS` framework.
 
 ## Features
 - Silently creates session for anonymous users who are visiting currency exchange rates.
@@ -24,15 +24,15 @@ The following tasks can be implemented for security and performance improvements
 - Session backup must be encoded for more security.
 - Restoring backup in initial state must be validated before use.
 - User session must be saved in separate encoded file to prevent memory leaks and server high memory usage.
-- User sessions may have expiration time and be removed after a period of time.
+- User sessions may have expiration time in some use cases and must be removed after the expiration time.
 - Using a separate noSQL server such as `Redis` or `MongoDB` as session storage.
 
 ## Demo Routes
-Base url and port is `http://localhost:5000`
-* `[GET] /` returns all available currency exchange rates. `Counts user visits`
-* `[GET] /watchlist` returns currency exchange rates selected in user watchlist. `Counts user visits`
-* `[PUT] /watchlist` stores a list of user selected currency symbols in user watchlist.
-* `[GET] /session` returns whole user session storage object.
+Base url and port has been set to `http://localhost:5000`
+- `[GET] /` returns all available currency exchange rates. `Counts user visits`
+- `[GET] /watchlist` returns currency exchange rates selected in user watchlist. `Counts user visits`
+- `[PUT] /watchlist` stores a list of user selected currency symbols in user watchlist.
+- `[GET] /session` returns whole user session storage object.
 
 ### Tests
 A postman collection is provided for tests in root folder as `postman-collection.json`.
